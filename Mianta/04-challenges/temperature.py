@@ -25,5 +25,6 @@ print ((5*1.8) + 32)
 # 30.2 C is hotter than 85.1 F 
 celsius_temp = (30.2 * 1.8) + 32
 print(celsius_temp)
-# To check and see if 30.2 is hotter... used f string to cnvert 30.2 degrees C to F
+# To check and see if 30.2 is hotter... used f string to convert 30.2 degrees C to F
+
 print(f'30.2 degrees C converts to 86.36 degrees F; which is hotter than 85.1 degrees F')

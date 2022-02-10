@@ -9,7 +9,7 @@ ingredient_4 = 'sugar'
 
 print('Four simple ingredients can combine to make so many different things:')
 # 1.1 Print the 4 ingredients in a single print statement, as 4 separate strings (separated by commas)
-
+print(ingredient_1,ingredient_2,ingredient_3,ingredient_4)
 
 # 1.2 Print the 4 ingredients using string concatenation
 # (make sure what you print out is legible-- add spaces and/or commas to your string so they don't all become one word!)

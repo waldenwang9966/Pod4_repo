@@ -7,3 +7,4 @@ print (34.2 - 32 * 5/9)#coverted this tempurature from F to C without assigning 
 print (5 * 9/5 +32) # print statement,converted from C to F
 print (30.2 * 9/5 +32) # converted C to F comes to 86.36F so 
 #Answer to question number 22 is YES (30.2C) is hotter than (85.1F)
+

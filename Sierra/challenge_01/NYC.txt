@@ -1,0 +1,39 @@
+Note: Doing my best to list the commands. I did the challenge on the old laptop and
+didn't download the zip onto this new laptop from JTC. The zip file is now locked so my commands
+are not going to be so accurate here!
+
+Scavenger Hunt Commands:
+1. 
+cd Queens
+cd Airports
+
+2.
+cat JFK.txt
+
+3.
+cd ../..
+
+4.
+cd Staten_Island 
+cd Food
+
+5. 
+cat Royal_Crown_Bakery.txt
+
+6.
+cd ../.. 
+cd Manhattan
+cd Parks
+cat Central_Park.txt
+cd ../..
+cd Bronx
+cd Zoos
+
+7.
+cat Bronx_Zoo.txt
+
+8.
+cd ../..
+cd Brooklyn
+cd Beaches
+cat Manhattan_Beach.txt

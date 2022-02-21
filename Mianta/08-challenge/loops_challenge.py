@@ -89,6 +89,6 @@ temperature = int(input('What temperature is it outside? '))#Wrote temperature =
 
 while (temperature < 65):
     print('Put on a sweater!') #Used a while statement to declare if the temperature is below 65 tell the user to wear a sweater. 
-    break #this is to terminate the loop so the next statement can resume
+    break #this is to terminate the loop so the next statement can resume.
 else:
     print('Spring has sprung!')#  Once the temperature is over 65, stop looping, and tell the user that "Spring has sprung!!!"

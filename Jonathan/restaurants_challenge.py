@@ -1,6 +1,6 @@
 print("Challenge: Favourite Restaurants")
 
-print(resturants)
+print()
 
 print("Question 1")
 

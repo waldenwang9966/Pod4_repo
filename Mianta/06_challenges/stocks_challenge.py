@@ -49,7 +49,7 @@ elif stock == 'msft':
     price = msft
     num_of_stocks = client_savings / price 
 else:
-    print('Whoops!!!! An error occurred please try again')
+    print('Whoops!!!!!! An error occurred please try again')
 
 print()
 

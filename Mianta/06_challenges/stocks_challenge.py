@@ -25,7 +25,7 @@ client_savings = int(input(f'Hello,{client_name} and Thank you! How much is in y
 
 #Wrote code to asked the client the stock they are interested in and saved it to another variable, as shown below.
 stock = input("Awesome, thank you! Which stock are you interested in? Please type 'amzn' for Amazon, 'appl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft.")
-if stock not in ['amzn', 'appl', 'fb','goog', 'msft']:  
+if stock not in ['amzn', 'appl', 'fb','goog', 'msft']:#this is because the variable given needs an if statement to get correct data  
     print('Uh-Oh! Please re-type your preferred stock using only alphabet letters.')
 stock = input('Which stock(s) are you interested in?') #same as above
 

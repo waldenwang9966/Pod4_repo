@@ -1,4 +1,4 @@
-from http import client
+from pickle import FALSE, TRUE
 
 
 print("Challenge 3.2: Playing with the stock market")
@@ -16,16 +16,17 @@ msft = 200
 print("Challenge 3.2.1: Taking user input")
 # asked the client their name and saved it to the variable.
 client_name = input ('Please enter your name...-')
-if client_name.isdigit() == False:
+if client_name.isdigit() == TRUE:
      print('Please re-enter your name-')
-client_name = input ('Please enter your name-') #this ensures numerical input is not input but instead alphabets 
+     client_name = input ('Please enter your name-') #this ensures numerical input is not input but instead alphabets 
 
 #asked client what their savings account amount and saved it to another variable.
 client_savings = int(input(f'Hello,{client_name} and Thank you! How much is in your savings account?'))
 
 #Wrote code to asked the client the stock they are interested in and saved it to another variable, as shown below.
 stock = input("Awesome, thank you! Which stock are you interested in? Please type 'amzn' for Amazon, 'appl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft.")
-print('Uh-Oh! Please re-type your preferred stock only alphabet letters.')
+if stock not in ['amzn', 'appl', 'fb','goog', 'msft']:  
+    print('Uh-Oh! Please re-type your preferred stock using only alphabet letters.')
 stock = input('Which stock(s) are you interested in?') #same as above
 
 print()

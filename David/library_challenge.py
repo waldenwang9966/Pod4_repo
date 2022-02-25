@@ -190,10 +190,14 @@ print()
 # Hint - You will need a for loop, if statement, .append() for this solution!
 
 def search_by_author(author):
-print(books_with_details [1] [author])
-print()
+    books_by_author = []
+    for book in books_with_details:
+        if book['author'] == author:
+            books_by_author.append(book['title'])
+    return books_by_author
 
 
 # 2.4
 # Search for book titles by the author 'Timothy Snyder' using the search_by_author function
 
+print(search_by_author('Timothy Snyder'))

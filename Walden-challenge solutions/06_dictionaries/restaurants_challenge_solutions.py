@@ -24,22 +24,28 @@ restaurant = {
     "address2": "",
     "address3": "",
     "state": "CA",
-    "address1": "375 Valencia St.",
+    "address1": "375 Valencia St",
     "zip_code": "94103",
     "distance": 1604.23,
     "transactions": ["pickup", "delivery"]
 }
 
-print(f'The Latitude is {restaurant["latitude"]}, The longitude is {restaurant["longitude"]}')
-print(f'The address for {restaurant["name"]} is, {restaurant["address1"]}, {restaurant["city"]}, {restaurant["state"]}  {restaurant["zip_code"]}')
-print(f'{restaurant["url"]}')
 
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
 # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
 
+print(f'Latitude of Four Barrel Coffee: {restaurant["latitude"]}\nLongitude of Four Barrel Coffee: {restaurant["longitude"]}')
+
+print(f'The complete address of Four Barrel Coffee is {restaurant["address1"]}, {restaurant["city"]}, {restaurant["state"]} {restaurant["country"]} {restaurant["zip_code"]}')
+
+print(f'Website of Four Barrel Coffee: {restaurant["url"]}')
+
 
 print()
+
+
+
 
 print("Question 2")
 
@@ -52,6 +58,13 @@ print("Question 2")
 
 # The dictionary for each restaurant should look something like this
 
+'''
+restaurant_1  = {
+    "name": "Subway",
+    "address" : "116th & Broadway, NY 10016",
+    "favourite_dish" : "Chicken BLT Sandwich"
+}
+'''
 
 restaurant_1  = {
     "name": "Subway",
@@ -59,31 +72,26 @@ restaurant_1  = {
     "favourite_dish" : "Chicken BLT Sandwich"
 }
 
-restaurant_2  = {
-    "name": "Boeuf & Bun",
-    "address" : "271 Kingstone Ave., NY 11213",
-    "favourite_dish" : "Crispy Chicken Bites"
+restaurant_2 = {
+    "name": "Pisticci",
+    "address" : "125 La Salle St, New York, NY 10027",
+    "favourite_dish" : "Ravioli"
 }
 
+
 restaurant_3  = {
-    "name": "Izzys Smoke House",
-    "address" : "660 Amsterdam Ave., NY 10025",
-    "favourite_dish" : "Half BBQ Chicken"
+    "name": "Awadh",
+    "address" : "2588 Broadway, New York, NY 10025",
+    "favourite_dish" : "Paneer Tikka Masala"
 }
-print('My top 3 Restaurants')
-print()
-print('Restaurant #1')
-for value in restaurant_1.values():
-    print(value)
-print()
-print('Restaurant #2')
-for value in restaurant_2.values():
-    print(value)
-print()
-print('Restaurant #3')
-for value in restaurant_3.values():
-    print(value)
-print()
+
+
+print(restaurant_1)
+print(restaurant_2)
+print(restaurant_3)
+
+
+
 
 print("Question 3")
 '''
@@ -92,12 +100,12 @@ Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
+
+restaurant_1.pop('favourite_dish')
+
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
 
-restaurant_1.pop("favourite_dish")
 print(restaurant_1)
-
-print()
 
 print("Question 4")
 '''
@@ -106,14 +114,16 @@ Update just this value in that restaurant's dictionary
 '''
 
 # TODO: Update the address field of 1 restaurant
+
+restaurant_3['address'] = '101 Amsterdam Avenue, New York, NY, 10029'
+
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
+
+print(restaurant_3['address'])
+
 # TODO: Print the updated dictionary.
-restaurant_2["address"]='1558 E 20th St.'
-print(restaurant_2["address"])
-print(restaurant_2)
 
-print()
-
+print(restaurant_3)
 
 print("Question 5")
 '''
@@ -124,7 +134,6 @@ Printing out all 3 of our restaurants every time is getting annoying. Let's clea
 # TODO: Loop through your list and print out the name and address of each restaurant
 
 restaurants = [restaurant_1, restaurant_2, restaurant_3]
-for i in restaurants:
-    print(i['name'], i['address'])
-    print()
-print("Completed restaurants challenge")
+
+for restaurant in restaurants:
+    print(restaurant['address'])

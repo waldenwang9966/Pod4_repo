@@ -125,6 +125,6 @@ Printing out all 3 of our restaurants every time is getting annoying. Let's clea
 
 restaurants = [restaurant_1, restaurant_2, restaurant_3]
 for i in restaurants:
-    print(i)
-print()
-print('Completed!')
+    print(i['name'], i['address'])
+    print()
+print("Completed restaurants challenge")

@@ -5,24 +5,29 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 
 # Let's start simple, and build up from there.
 # 1.1: Write a for loop that prints out each day in the `days` variable above.
+for day in days:
+    print (day)
 
-for weekday in days:
-    print(weekday)
+
 
 
 # 1.2: Now, instead of printing out the day, let's ask the user what their favorite thing
 # to do is on that day of the week. (Make sure to use an f-string so that the user knows which
 # day they're being asked about.)
-
 activities = []
-for weekday in days:
-    user_activity = input(f'What is your favorite thing to do on {weekday}? ')
-    activities.append(user_activity)
+for day in days:
+    activity = input(f'what their favorite thing to do on that {day} of the week') 
+    activities.append(activity)
+print(activities)
+
+
+
+
 
 # 1.3: We should keep track of the user's favorite things to do so that we can print them out all together.
 # ABOVE your for loop, create a new empty list to hold the user's favorite activities.
 
-print(activities)
+
 
 # 1.4: Now, back in your for loop, append each of the user's answers into your new list.
 # Print out the list after your loop to check if it got populated correctly.
@@ -36,8 +41,10 @@ print(activities)
 # of the items in the lists (this will work because the lists are the same length).
 # Each time through this new loop, use the index number to index into each of your lists for the data
 # you need to print out.
-for i in range (7):
-    print(f'On {days[i]}, your favorite activity is to {activities[i]}.')
+for i in range(len(days)):
+    print(f'on {days[i]}, your favorite activity is to {activities[i]}.')
+
+
 
 
 
@@ -60,30 +67,16 @@ for i in range (7):
 # is. If the temperature is below 50, tell the user to put on a jacket. Or, if the temperature is
 # between 50 and 65, tell the user to put on a sweater. Finally, if the temperature is above 65,
 # tell the user to put on some sunscreen.
-
-
-days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-
-# creating message variable for temp <50
-under_50 = "It's cold, put on a jacket!"
-
-# creating message variable for temp between 50 65
-between_50_65 = "Put on your sweater."
-
-# creating message variable for temp above 65
-above_65 = "It's hot! Put on some sunscreen!"
-
-# create a loop that goes through the days of the week asking the from the user the tempurature of that day
-
-for weekday in days:
-    current_temp = int(input(f'Today is {weekday}. What is the tempurature today? '))
-    # conditional statement that creates a message
-    if current_temp < 50:
-        print(under_50)
-    elif current_temp < 65:
-        print(between_50_65)
+for day in days:
+    temp = int(input('what is the temperature today?'))
+    if temp < 50:
+        print('put on a jacket')
+    elif temp < 65:
+        print('put on a sweater')
     else:
-        print(above_65)
+        print('wear sunscreen')
+
+        
 
 
 
@@ -92,11 +85,9 @@ for weekday in days:
 # Write a program that asks the user how many times they would like to be wished happy birthday.
 # Then, print out happy birthday that number of times.
 
-n = int(input(f'How many times do you want to be wished Happy Birthday? '))
-
-for wishes in range (n):
-    print('Happy Birthday')
-
+num_wishes = int(input('how many times would you like to be wished happy birthday?'))
+for i in range(num_wishes):
+    print('happy birthday')
 
 
 # QUESTION 4: While loops
@@ -104,13 +95,12 @@ for wishes in range (n):
 # Write a program that asks the user what temperature it is outside. While the temperature is below 65,
 # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
 # Spring has sprung!
+temp = int(input('what is the temp?'))
+while temp < 65:
+    print('put on a jacket')
+    temp = int(input('what is the temp?'))
+    print('spring has sprung')
 
-while int(input(f'What is the temperature outside? ')) <= 65:
-    print('wear a sweater ')
-
-print("Spring has sprung! ")
-print()
-print('Completed Challenge! Finally!!')
 
 # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
-# a) on a mac: hit command + C to stop your program, or b) on a pc: hit control + C to stop the program.
+# hit control + C to stop the program. No harm done to your computer (:

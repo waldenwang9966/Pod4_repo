@@ -6,23 +6,35 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Let's start simple, and build up from there.
 # 1.1: Write a for loop that prints out each day in the `days` variable above.
 
+for day in days:
+    print(day)
 
 
 # 1.2: Now, instead of printing out the day, let's ask the user what their favorite thing
 # to do is on that day of the week. (Make sure to use an f-string so that the user knows which
 # day they're being asked about.)
 
-
+for day in days:
+    activity = input(f'What is your favorite thing to do on {day}? ')
 
 # 1.3: We should keep track of the user's favorite things to do so that we can print them out all together.
 # ABOVE your for loop, create a new empty list to hold the user's favorite activities.
 
+activities = []
 
+for day in days:
+    activity = input(f'What is your favorite thing to do on {day}? ')
 
 # 1.4: Now, back in your for loop, append each of the user's answers into your new list.
 # Print out the list after your loop to check if it got populated correctly.
 
+activities = []
 
+for day in days:
+    activity = input(f'What is your favorite thing to do on {day}? ')
+    activities.append(activity)
+
+print(activities)
 
 # 1.5: After your first loop, let's create a new one. As an example, let's say the user's favorite thing to
 # do on mondays is plan their week. This time, we want the output to be something like this:
@@ -32,7 +44,14 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Each time through this new loop, use the index number to index into each of your lists for the data
 # you need to print out.
 
+activities = []
 
+for day in days:
+    activity = input(f'What is your favorite thing to do on {day}? ')
+    activities.append(activity)
+
+for i in range(len(days)):
+    print(f'On {days[i]}s, your favorite activity is to {activities[i]}')
 
 
 # Take a look back at the code you just wrote. Look at how much it does!
@@ -55,7 +74,15 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # between 50 and 65, tell the user to put on a sweater. Finally, if the temperature is above 65,
 # tell the user to put on some sunscreen.
 
+for day in days:
+    temp = int(input("What is today's temperature? "))
 
+    if temp < 50:
+        print('Put on a jacket')
+    elif temp < 65:  # There are a bunch of ways to do this, if it works, it's probably fine
+        print('Put on a sweater')
+    else:
+        print('Wear sunscreen!')
 
 
 
@@ -64,7 +91,10 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Write a program that asks the user how many times they would like to be wished happy birthday.
 # Then, print out happy birthday that number of times.
 
+num_wishes = int(input('How many times would you like to be wished happy birthday? '))
 
+for i in range(num_wishes):
+    print('Happy birthday!')
 
 
 # QUESTION 4: While loops
@@ -72,6 +102,15 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 # Write a program that asks the user what temperature it is outside. While the temperature is below 65,
 # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
 # Spring has sprung!
+
+temp = int(input('What is the temperature? '))
+
+while temp < 65:
+    print('Put on a jacket!')
+
+    temp = int(input('What is the temperature? '))
+
+print('Woo! Spring has sprung')
 
 # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
 # hit control + C to stop the program. No harm done to your computer (:

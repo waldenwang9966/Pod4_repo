@@ -99,7 +99,8 @@ temp = int(input('what is the temp?'))
 while temp < 65:
     print('put on a jacket')
     temp = int(input('what is the temp?'))
-    print('spring has sprung')
+    
+print('spring has sprung')
 
 
 # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and

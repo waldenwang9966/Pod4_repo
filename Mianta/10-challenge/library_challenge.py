@@ -147,7 +147,7 @@ books_with_details = [
     }
 ]
 print()
-# 2.0
+#2.0
 # Describe the structure of the data in books_with_details. What types of data are nested within others? How do you know?
 #this variable is a list of dictionaries with the name author and relevant info the indicator are the (), [] and {}.
 print(type(books_with_details)) #should return list

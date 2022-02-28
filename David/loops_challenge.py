@@ -114,4 +114,3 @@ print('Completed Challenge! Finally!!')
 
 # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
 # a) on a mac: hit command + C to stop your program, or b) on a pc: hit control + C to stop the program.
-# No harm done to your computer (:

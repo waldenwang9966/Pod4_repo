@@ -5,22 +5,12 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 
 # Let's start simple, and build up from there.
 # 1.1: Write a for loop that prints out each day in the `days` variable above.
-for day in days:
-    print (day)
-
 
 
 
 # 1.2: Now, instead of printing out the day, let's ask the user what their favorite thing
 # to do is on that day of the week. (Make sure to use an f-string so that the user knows which
 # day they're being asked about.)
-activities = []
-for day in days:
-    activity = input(f'what their favorite thing to do on that {day} of the week') 
-    activities.append(activity)
-print(activities)
-
-
 
 
 
@@ -41,9 +31,6 @@ print(activities)
 # of the items in the lists (this will work because the lists are the same length).
 # Each time through this new loop, use the index number to index into each of your lists for the data
 # you need to print out.
-for i in range(len(days)):
-    print(f'on {days[i]}, your favorite activity is to {activities[i]}.')
-
 
 
 
@@ -67,16 +54,8 @@ for i in range(len(days)):
 # is. If the temperature is below 50, tell the user to put on a jacket. Or, if the temperature is
 # between 50 and 65, tell the user to put on a sweater. Finally, if the temperature is above 65,
 # tell the user to put on some sunscreen.
-for day in days:
-    temp = int(input('what is the temperature today?'))
-    if temp < 50:
-        print('put on a jacket')
-    elif temp < 65:
-        print('put on a sweater')
-    else:
-        print('wear sunscreen')
 
-        
+
 
 
 
@@ -85,9 +64,7 @@ for day in days:
 # Write a program that asks the user how many times they would like to be wished happy birthday.
 # Then, print out happy birthday that number of times.
 
-num_wishes = int(input('how many times would you like to be wished happy birthday?'))
-for i in range(num_wishes):
-    print('happy birthday')
+
 
 
 # QUESTION 4: While loops
@@ -95,13 +72,6 @@ for i in range(num_wishes):
 # Write a program that asks the user what temperature it is outside. While the temperature is below 65,
 # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
 # Spring has sprung!
-temp = int(input('what is the temp?'))
-while temp < 65:
-    print('put on a jacket')
-    temp = int(input('what is the temp?'))
-    
-print('spring has sprung')
-
 
 # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
 # hit control + C to stop the program. No harm done to your computer (:

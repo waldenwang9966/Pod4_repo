@@ -1,3 +1,6 @@
+from os import lseek
+
+
 print("Challenge: Favourite Restaurants")
 
 print()

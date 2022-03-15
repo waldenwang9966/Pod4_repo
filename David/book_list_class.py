@@ -23,16 +23,16 @@ class Booklist():
 			if book.title == title: 
 				self.books.remove(book)
 		
+	# method to display all book titles in alphabetical order
 	def display_titles(self):
-		"""Print out all titles currently in the book list"""
-		titles = self
-		for book in self.books:
-			titles.append(book.title)
-			titles.sort()
-		 
+		print(sorted([book.title for book in self.books]))
+
 	def is_empty(self):
 		"""Return True if the book list is empty, False if not"""
-		pass
+		if len() == 0: 
+			return True 
+		else: 
+			return False
 
 	
 	

@@ -89,6 +89,8 @@ my_library.remove_title('Just Mercy')
 for book in my_library.books:
     print(book.title, book.author)
 
+my_library.display_titles()
+
 
 '''
 Part #5:
@@ -121,5 +123,6 @@ Once you have completed this method, test it out on both my_library and nyt_best
 
 print('\nBONUS Part 6\n')
 
-my_library.sort() # = sorted(book.title)
-print(sorted(my_library))
+
+my_library.display_titles()
+nyt_bestseller.display_titles()

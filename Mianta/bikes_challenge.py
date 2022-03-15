@@ -81,8 +81,11 @@ print('')
 
 print('Question 7')
 # 7.1 - Check out bike 3 from Station A
+station_a.check_out(3)
 # 7.2 - Check out bike 5 from  Station B
+station_b.check_out(5)
 # 7.3 - Check in bike 3 to Station B 
+station_b.check_in(3)
 # Print the bikes attributes for both Station A and Station B objects.
 print(station_a.bikes)
 print(station_b.bikes)

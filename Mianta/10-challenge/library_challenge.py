@@ -49,7 +49,7 @@ print()
 #Bonus: Run available_books function to see if the book was checked in
 print('SAPIENS' in books)
 available_books()
-# Create a function 'search_by_name' that prints 'Available' if exists in books list, 'Not Available' if it doesn't.
+#Create a function 'search_by_name' that prints 'Available' if exists in books list, 'Not Available' if it doesn't.
 # Parameters: book (string)
 # Return: Not needed for this function
 def search_by_name(book):# created a function that takes book as a variable 

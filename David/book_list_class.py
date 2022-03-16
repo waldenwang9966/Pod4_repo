@@ -29,7 +29,7 @@ class Booklist():
 
 	def is_empty(self):
 		"""Return True if the book list is empty, False if not"""
-		if len() == 0: 
+		if len(self.books) == 0: 
 			return True 
 		else: 
 			return False

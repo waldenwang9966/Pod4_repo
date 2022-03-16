@@ -126,3 +126,4 @@ print('\nBONUS Part 6\n')
 
 my_library.display_titles()
 nyt_bestseller.display_titles()
+print(my_library.is_empty())

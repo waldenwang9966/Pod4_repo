@@ -101,6 +101,10 @@ Then, print out the books attribute of nyt_bestsellers
 # This doesn't work here but it works in the book_list_class.py script!
 #print(nyt_bestsellers.books)
 print('\nPart 5\n')
+nyt_bestsellers = Booklist()
+nyt_bestsellers.add('It Ends With Us', 'Colleen Hoover')
+nyt_bestsellers.add('Refugee', 'Alan Gratz')
+print(nyt_bestsellers.books)
 
 
 

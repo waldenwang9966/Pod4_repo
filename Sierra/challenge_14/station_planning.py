@@ -4,7 +4,7 @@ subway_station2 = SubwayStation(station_name='LaLaLa', location='W 5th ave and a
 subway_station2.show_info()
 
 
-bus_station2 = BusStation(routes=['ThisWay', 'ThatWay', 'Nowhere'], open=False, station_name='Where TF Am I', location='Somewhere and maybe somewhere else')
+bus_station2 = BusStation(routes=['ThisWay', 'ThatWay', 'Nowhere'], station_name='Where TF Am I', location='Somewhere and maybe somewhere else')
 bus_station2.show_info()
 
 

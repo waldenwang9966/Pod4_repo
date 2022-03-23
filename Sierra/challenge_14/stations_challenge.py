@@ -72,16 +72,18 @@ class BusStation(Station):
         self.open = True
     
     def open_station(self):
-        self.open == True
-        self.open = 'open'
+        print("The station is open.")
 
     def close_station(self):
-        self.open == False
-        self.open = 'closed'
+        print("The station is closed.")
 
     def show_info(self):
-        self.open_station()
-        print(f'The bus routes are {self.routes} and the station is {self.open}. {self.station_name} is located at {self.location}.')
+        if self.open == True:
+            print(f'The bus routes are {self.routes}. {self.station_name} is located at {self.location}.') 
+            self.open_station()
+        else:
+            print(f'The bus routes are {self.routes}. {self.station_name} is located at {self.location}.')
+            self.close_station()
 
 
 print('Question 4: Make an example bus station')

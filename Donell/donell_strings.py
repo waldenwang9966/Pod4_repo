@@ -50,4 +50,4 @@ print(type(frequency))
 
 #3.4
 print('Research shows that making time for enjoyment actually makes you more focused.')
-print(f'We recommend you {activity} at least {frequency * 2} times a week!')
+print(f'We recommend you {activity} at least int(frequency)* 2 times a week!') 

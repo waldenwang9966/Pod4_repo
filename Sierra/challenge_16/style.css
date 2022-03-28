@@ -1,0 +1,36 @@
+#mainHeading {
+    text-align: center;
+}
+
+.specificFont {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.paraColor {
+    color: firebrick;
+}
+
+#fact1 {
+    color: orange;
+}
+
+#fact2 {
+    color: palevioletred;
+    font-style: italic;
+}
+
+#fact3 {
+    color: olivedrab;
+}
+
+#tattoo {
+    font-style: italic;
+}
+
+.formLabel {
+    font-weight: bold;
+}
+
+#imgs {
+    text-align: center;
+}

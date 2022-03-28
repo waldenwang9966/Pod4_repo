@@ -1,1 +1,0 @@
-My name is Sierra and I love food!

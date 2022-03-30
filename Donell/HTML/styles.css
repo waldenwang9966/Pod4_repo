@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+.font_verdana {
+    font-family: Verdana;
+}
+
+#fact1 {
+    color: rgb(119, 118, 119);
+}
+#fact2 {
+    color : rgb(255, 115, 0);
+    
+}
+#fact3 {
+    color: gray;
+    font-style: italic;
+}
+form {
+    font-weight: bold;
+}
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

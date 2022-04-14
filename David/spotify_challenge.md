@@ -103,9 +103,13 @@ It is "one to many" model.
 
 What changes would you make to the modeling of genre data if we could assign more than one genre to a song?
 
+You can create a seperate ID for the different genres of the song
+
 | 6   | Hey JTC            | 2        | 5       | 2       |
+
 | 6   | Hey JTC            | 2        | 5       | 1       |
 
+Or, better yet, create a many-to-many table. 
 
 ### SongGenre
 
